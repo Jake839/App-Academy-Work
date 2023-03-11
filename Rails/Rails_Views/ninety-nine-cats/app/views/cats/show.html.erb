@@ -1,3 +1,4 @@
+<!-- Cat Data -->
 <table>
     <thead>
         <tr>
@@ -23,6 +24,47 @@
         </tr>
     </tbody>
 </table>
+
+<br>
+
+<!-- Cat Rental Request Data -->
+<table>
+    <% if @cat_rental_requests.exists? %>
+        <thead>
+            <tr>
+                <th align="left">Rental Requests</th>
+            </tr>
+        </thead>
+        <tbody>
+            <% @cat_rental_requests.each do |request| %>
+                <tr>
+                    <td>Start Date:</td>
+                    <td><%= request.start_date %></td>
+                </tr>
+                <tr>
+                    <td>End Date:</td>
+                    <td><%= request.end_date %></td>
+                </tr>
+                <tr>
+                    <td>Status:</td>
+                    <td><%= request.status %></td>
+                </tr>
+                <tr></tr><tr></tr><tr></tr><tr></tr><tr></tr>
+            <% end %>    
+        </tbody>
+    <% else %>
+        <thead>
+            <tr>
+                <th align="left"><%= @cat.name %> has no rental requests.</th>
+            </tr>
+        </thead>
+    <% end %>
+</table>
+
+<br>
+
+<!-- Link to Create a New Rental Request for Cat -->
+<a href="/cats/<%= @cat.id %>/cat_rental_requests/new">Create Rental Request for <%= @cat.name %></a> 
 
 
 
