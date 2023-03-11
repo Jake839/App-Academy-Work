@@ -35,7 +35,11 @@ class CatRentalRequest < ApplicationRecord
         request.save!
     end 
 
-    #private 
+    def pending? 
+        self.status == 'PENDING'
+    end 
+
+    private 
 
     def at_least_one_rental_request_exists? 
         CatRentalRequest.first != nil 
@@ -61,7 +65,4 @@ class CatRentalRequest < ApplicationRecord
         end 
     end 
 
-    def pending? 
-        self.status == 'PENDING'
-    end 
 end 
