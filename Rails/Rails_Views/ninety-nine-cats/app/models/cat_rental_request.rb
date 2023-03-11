@@ -22,6 +22,19 @@ class CatRentalRequest < ApplicationRecord
         foreign_key: :cat_id, 
         class_name: :Cat
 
+    def approve! 
+        self.transaction do 
+            self.status = 'APPROVED'
+            self.save! 
+            overlapping_pending_requests.each { |request| request.deny!(request) } 
+        end 
+    end 
+
+    def deny!(request)
+        request.status = 'DENIED'
+        request.save!
+    end 
+
     #private 
 
     def at_least_one_rental_request_exists? 
@@ -29,18 +42,26 @@ class CatRentalRequest < ApplicationRecord
     end 
 
     def overlapping_requests 
-        CatRentalRequest.where(start_date: self.start_date..self.end_date).or(CatRentalRequest.where(end_date: self.start_date..self.end_date)).where("cat_id = #{self.cat_id}")
+        CatRentalRequest.where(start_date: self.start_date..self.end_date).or(CatRentalRequest.where(end_date: self.start_date..self.end_date)).where("cat_id = #{self.cat_id}").where.not(id: self.id)
     end 
 
     def overlapping_approved_requests
         overlapping_requests.where(status: 'APPROVED')
     end 
 
+    def overlapping_pending_requests
+        overlapping_requests.where(status: 'PENDING')
+    end 
+
     def does_not_overlap_approved_request
         if at_least_one_rental_request_exists?
-            if overlapping_approved_requests.exists? 
+            if overlapping_approved_requests.exists? && self.status == 'APPROVED'
                 errors.add(:base, "There's an approved cat rental request in that time period.")
             end 
         end 
+    end 
+
+    def pending? 
+        self.status == 'PENDING'
     end 
 end 

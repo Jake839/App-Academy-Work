@@ -1,11 +1,10 @@
 <!-- Cat Data -->
 <table>
-    <thead>
-        <tr>
-            <th align="left"><%= @cat.name %></th>
-        </tr>
-    </thead>
     <tbody>
+        <tr>
+            <td><b>Cat:</b></td>
+            <td><b><%= @cat.name %></b></td>
+        </tr>
         <tr>
             <td>Color:</td>
             <td><%= @cat.color %></td>
@@ -26,6 +25,11 @@
 </table>
 
 <br>
+
+<!-- Link to Create a New Rental Request for Cat -->
+<a href="/cats/<%= @cat.id %>/cat_rental_requests/new">Create Rental Request for <%= @cat.name %></a> 
+
+<br><br>
 
 <!-- Cat Rental Request Data -->
 <table>
@@ -49,7 +53,13 @@
                     <td>Status:</td>
                     <td><%= request.status %></td>
                 </tr>
-                <tr></tr><tr></tr><tr></tr><tr></tr><tr></tr>
+                <tr>
+                    <% if request.pending? %>
+                        <td><%= button_to 'Approve', approve_cat_rental_request_url(request.id), method: :get %></td> 
+                        <td><%= button_to 'Deny', deny_cat_rental_request_url(request.id), method: :get %></td> 
+                    <% end %>
+                </tr>
+                <tr></tr><tr></tr><tr></tr><tr></tr><tr></tr><tr></tr><tr></tr><tr></tr>
             <% end %>    
         </tbody>
     <% else %>
@@ -60,11 +70,6 @@
         </thead>
     <% end %>
 </table>
-
-<br>
-
-<!-- Link to Create a New Rental Request for Cat -->
-<a href="/cats/<%= @cat.id %>/cat_rental_requests/new">Create Rental Request for <%= @cat.name %></a> 
 
 
 

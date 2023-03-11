@@ -19,6 +19,28 @@ class CatRentalRequestsController < ApplicationController
         end 
     end 
 
+    def approve 
+        @cat_rental_request = CatRentalRequest.find_by(id: params[:id])
+        @error_msg = "Error. Couldn't approve cat rental request."
+        
+        if @cat_rental_request.approve! 
+            redirect_to cat_url(@cat_rental_request.cat_id)
+        else   
+            render :error
+        end 
+    end 
+
+    def deny 
+        @cat_rental_request = CatRentalRequest.find_by(id: params[:id])
+        @error_msg = "Error. Couldn't deny cat rental request."
+
+        if @cat_rental_request.deny!(@cat_rental_request)
+            redirect_to cat_url(@cat_rental_request.cat_id)
+        else 
+            render :error
+        end 
+    end 
+
     private 
 
     def cat_rental_request_params 

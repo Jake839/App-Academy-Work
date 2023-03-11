@@ -3,9 +3,15 @@ Rails.application.routes.draw do
 
   #resources :cats, only: [:index, :show, :new, :create, :edit, :update]
 
-  #routes for cats controller. nested routes to cat_rental_requests controller.
+  #routes for cats controller. collection/nested routes to cat_rental_requests controller.
   resources :cats do 
     resources :cat_rental_requests, only: [:new, :create]
+  end 
+
+  #member routes for cat_rental_requests controller
+  resources :cat_rental_requests do 
+    get 'approve', on: :member
+    get 'deny', on: :member
   end 
 
   # Defines the root path route ("/")
