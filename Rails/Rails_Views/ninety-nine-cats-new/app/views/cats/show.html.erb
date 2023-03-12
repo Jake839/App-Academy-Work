@@ -1,0 +1,75 @@
+<!-- Cat Data -->
+<table>
+    <tbody>
+        <tr>
+            <td><b>Cat:</b></td>
+            <td><b><%= @cat.name %></b></td>
+        </tr>
+        <tr>
+            <td>Color:</td>
+            <td><%= @cat.color %></td>
+        </tr>
+        <tr>
+            <td>Sex:</td>
+            <td><%= @cat.sex %></td>
+        </tr>
+        <tr>
+            <td>Birth Date:</td>
+            <td><%= @cat.birth_date.to_formatted_s(:long) %></td>
+        </tr>
+        <tr>
+            <td>Description:</td>
+            <td><%= @cat.description %></td>
+        </tr>
+    </tbody>
+</table>
+
+<br>
+
+<!-- Link to Create a New Rental Request for Cat -->
+<a href="/cats/<%= @cat.id %>/cat_rental_requests/new">Create Rental Request for <%= @cat.name %></a> 
+
+<br><br>
+
+<!-- Cat Rental Request Data -->
+<table>
+    <% if @cat_rental_requests.exists? %>
+        <thead>
+            <tr>
+                <th align="left">Rental Requests</th>
+            </tr>
+        </thead>
+        <tbody>
+            <% @cat_rental_requests.each do |request| %>
+                <tr>
+                    <td>Start Date:</td>
+                    <td><%= request.start_date %></td>
+                </tr>
+                <tr>
+                    <td>End Date:</td>
+                    <td><%= request.end_date %></td>
+                </tr>
+                <tr>
+                    <td>Status:</td>
+                    <td><%= request.status %></td>
+                </tr>
+                <tr>
+                    <% if request.pending? %>
+                        <td><%= button_to 'Approve', approve_cat_rental_request_url(request.id), method: :get %></td> 
+                        <td><%= button_to 'Deny', deny_cat_rental_request_url(request.id), method: :get %></td> 
+                    <% end %>
+                </tr>
+                <tr></tr><tr></tr><tr></tr><tr></tr><tr></tr><tr></tr><tr></tr><tr></tr>
+            <% end %>    
+        </tbody>
+    <% else %>
+        <thead>
+            <tr>
+                <th align="left"><%= @cat.name %> has no rental requests.</th>
+            </tr>
+        </thead>
+    <% end %>
+</table>
+
+
+

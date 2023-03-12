@@ -1,0 +1,33 @@
+<h1>New Rental Request</h1>
+
+<form action="/cats/:cat_id/cat_rental_requests" method="post">
+
+    <!--Dropdown to select cat. Prefills cat if user has already taken action to request rental for specific cat.-->     
+    <label for="cat_id">Cat</label>
+    <select name="cat_rental_request[cat_id]" id="cat_id" required="required">
+        <% if @cat_id != "generic_request" %>
+            <% @cat_ids_and_names.each do |cat, cat_data| %>
+                <option value="<%= cat_data[0].to_i %>" <%= cat_data[0] == @cat_id ? "selected" : "" %>><%= cat_data[0] %> - <%= cat_data[1] %></option>
+            <% end %>
+        <% else %>
+            <option disabled selected>--Please Select--</option>
+            <% @cat_ids_and_names.each do |cat, cat_data| %>
+                <option value="<%= cat_data[0].to_i %>"><%= cat_data[0] %> - <%= cat_data[1] %></option>
+            <% end %>
+        <% end %>
+    </select>
+
+    <br><br>
+
+    <label for="birth_date">Start Date</label>
+    <input type="date" name="cat_rental_request[start_date]" required="required">
+
+    <br><br>
+
+    <label for="birth_date">End Date</label>
+    <input type="date" name="cat_rental_request[end_date]" required="required">
+
+    <br><br>
+
+    <input type="submit" value="Create"> 
+</form>
