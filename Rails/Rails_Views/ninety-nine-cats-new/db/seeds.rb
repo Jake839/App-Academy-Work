@@ -6,13 +6,26 @@
 #   movies = Movie.create([{ name: "Star Wars" }, { name: "Lord of the Rings" }])
 #   Character.create(name: "Luke", movie: movies.first)
 
+require 'open-uri'
+
 puts "Loading Cats..."
 Cat.destroy_all 
-cat1 = Cat.create(birth_date: '2020/01/10', color: 'grey', name: 'Missy', sex: 'F', description: 'Missy cat description.')
-cat2 = Cat.create(birth_date: '2021/01/05', color: 'orange', name: 'Whiskers', sex: 'M', description: 'Whiskers cat description.')
+cat1 = Cat.create(birth_date: '2020/01/10', color: 'white', name: 'Missy', sex: 'F', description: 'Missy cat description.')
+cat2 = Cat.create(birth_date: '2021/01/05', color: 'mix', name: 'Whiskers', sex: 'M', description: 'Whiskers cat description.')
 cat3 = Cat.create(birth_date: '2023/02/19', color: 'mix', name: 'Speedy', sex: 'F', description: 'Speedy cat description.')
-cat4 = Cat.create(birth_date: '2017/10/12', color: 'black', name: 'Jumper', sex: 'F', description: 'Jumper cat description.')
-cat5 = Cat.create(birth_date: '2018/02/22', color: 'white', name: 'Paws', sex: 'F', description: 'Paws cat description.')
+cat4 = Cat.create(birth_date: '2017/10/12', color: 'orange', name: 'Jumper', sex: 'F', description: 'Jumper cat description.')
+cat5 = Cat.create(birth_date: '2018/02/22', color: 'mix', name: 'Paws', sex: 'F', description: 'Paws cat description.')
+#Load Cat Photos
+missy = File.open('app/assets/images/Missy.jpg', 'rb')
+cat1.image.attach(io: missy, filename: 'missy.jpg')
+whiskers = File.open('app/assets/images/Whiskers.jpg', 'rb')
+cat2.image.attach(io: whiskers, filename: 'whiskers.jpg')
+speedy = File.open('app/assets/images/Speedy.jpg', 'rb')
+cat3.image.attach(io: speedy, filename: 'speedy.jpg')
+jumper = File.open('app/assets/images/Jumper.jpg', 'rb')
+cat4.image.attach(io: jumper, filename: 'jumper.jpg')
+paws = File.open('app/assets/images/Paws.jpg', 'rb')
+cat5.image.attach(io: paws, filename: 'paws.jpg')
 
 puts "Loading Cat Rental Requests..."
 CatRentalRequest.destroy_all 

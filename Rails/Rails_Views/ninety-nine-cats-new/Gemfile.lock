@@ -178,7 +178,6 @@ PLATFORMS
   x86_64-darwin-22
 
 DEPENDENCIES
-  activestorage (~> 7.0, >= 7.0.4.2)
   annotate (= 3.2.0)
   better_errors
   binding_of_caller

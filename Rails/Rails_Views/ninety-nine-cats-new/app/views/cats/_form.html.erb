@@ -14,6 +14,12 @@
 
     <br><br>
 
+    <!-- Photo upload from user -->
+    <%= cat.label :image %>
+    <%= cat.file_field :image %>
+
+    <br><br>
+
     <label for="sex" align="left">Sex</label>
     <% if cat.sex =="M" %>
         M<input type="radio" name="cat[sex]" value="M" checked>

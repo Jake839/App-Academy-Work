@@ -45,6 +45,9 @@ class Cat < ApplicationRecord
         class_name: :CatRentalRequest, 
         dependent: :destroy
 
+    has_one_attached :image, 
+        dependent: :destroy
+
     private 
 
     def birth_date_cannot_be_future 

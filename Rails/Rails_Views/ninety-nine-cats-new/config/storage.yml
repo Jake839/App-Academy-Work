@@ -1,0 +1,6 @@
+# This file added per ChatGPT on 3/11.
+# config/storage.yml
+
+local:
+  service: Disk
+  root: <%= Rails.root.join('storage') %>
