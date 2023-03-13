@@ -1,10 +1,15 @@
 <% if cat.persisted? %>
     <% action_url = cat_url(cat)  %>
+    <% if cat.image.attached? %>
+        <%= image_tag cat.image, style: "width: 120px; display: block" %> 
+    <% end %>
 <% else %>
     <% action_url = cats_url %>
 <% end %>
 
-<form action="<%= action_url %>" method="post">
+<br>
+
+<form action="<%= action_url %>" method="post" enctype="multipart/form-data">
     <% if cat.persisted? %>
         <input type="hidden" name="_method" value="patch">    
     <% end %>
@@ -14,9 +19,8 @@
 
     <br><br>
 
-    <!-- Photo upload from user -->
-    <%= cat.label :image %>
-    <%= cat.file_field :image %>
+    <!-- Let user upload photo -->
+    <input type="file" name="cat[image]">
 
     <br><br>
 
@@ -59,8 +63,8 @@
     <br><br>
 
     <% if cat.persisted? %>
-        <input type="submit" value="Update">   
+        <input class="formbutton" type="submit" value="Update">
     <% else %>
-        <input type="submit" value="Create">      
+        <input class="formbutton" type="submit" value="Create">      
     <% end %>                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                
 </form>
