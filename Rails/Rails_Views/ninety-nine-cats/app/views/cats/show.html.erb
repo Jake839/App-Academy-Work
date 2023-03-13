@@ -1,3 +1,8 @@
+<!-- Cat Photo -->
+<% if @cat.image.attached? %>
+    <%= image_tag @cat.image, style: "width: 150px; display: block" %> 
+<% end %>
+
 <!-- Cat Data -->
 <table>
     <tbody>
@@ -21,13 +26,13 @@
             <td>Description:</td>
             <td><%= @cat.description %></td>
         </tr>
+        <tr></tr><tr></tr><tr></tr>
+        <tr>
+            <td><%= button_to "Edit #{@cat.name}", edit_cat_url(@cat), method: :get %></td>
+            <td><%= button_to "Create Rental Request for #{@cat.name}", new_cat_cat_rental_request_url(@cat), method: :get %></td>
+        </tr>
     </tbody>
 </table>
-
-<br>
-
-<!-- Link to Create a New Rental Request for Cat -->
-<a href="/cats/<%= @cat.id %>/cat_rental_requests/new">Create Rental Request for <%= @cat.name %></a> 
 
 <br><br>
 

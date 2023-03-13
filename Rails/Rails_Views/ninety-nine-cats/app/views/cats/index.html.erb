@@ -1,7 +1,7 @@
 <h1>All the Cats!</h1>
 
 <ul>
-    <%= render @cats %>
+    <%= render @cats, last_cat_id: @cats.last.id %>
 </ul>
 
 <!-- Button to Add a Cat -->

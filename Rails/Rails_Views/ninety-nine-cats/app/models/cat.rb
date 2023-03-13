@@ -45,10 +45,13 @@ class Cat < ApplicationRecord
         class_name: :CatRentalRequest, 
         dependent: :destroy
 
+    has_one_attached :image, 
+        dependent: :destroy
+
     private 
 
     def birth_date_cannot_be_future 
-        errors.add(:birth_date, "can't be in future.") if birth_date > Date.current
+        errors.add(:birth_date, "can't be in future.") if birth_date.nil? || birth_date > Date.current
     end 
 
     def birth_date_in_future? 
