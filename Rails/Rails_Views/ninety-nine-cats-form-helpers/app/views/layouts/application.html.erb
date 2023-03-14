@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>NinetyNineCats</title>
+    <meta name="viewport" content="width=device-width,initial-scale=1">
+    <%= csrf_meta_tags %>
+    <%= csp_meta_tag %>
+
+    <%= stylesheet_link_tag "application" %>
+    <style>
+      h1 { 
+        font-family: 'AmaticSC';
+      }
+
+      button, .formbutton { 
+        background-color: teal;
+        color: white;
+      }
+    </style>
+
+  </head>
+
+  <body>
+    <%= yield %>
+  </body>
+</html>

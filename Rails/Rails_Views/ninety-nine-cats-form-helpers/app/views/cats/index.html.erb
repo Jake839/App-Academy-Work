@@ -1,0 +1,16 @@
+<h1>All the Cats!</h1>
+
+<ul>
+    <%= render @cats, last_cat_id: @cats.last.id %>
+</ul>
+
+<!-- Button to Add a Cat -->
+<%= button_to 'Add Cat', new_cat_url, method: :get %>
+
+<br>
+
+<!-- Button to Create a New Cat Rental Request -->
+<%= button_to 'Add Cat Rental Request', new_cat_rental_request_url, method: :get %>
+
+
+

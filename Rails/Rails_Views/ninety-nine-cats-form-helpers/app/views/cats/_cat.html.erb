@@ -1,0 +1,11 @@
+<li>
+    <% if cat.image.attached? %>
+        <%= image_tag cat.image, style: "width: 100px; display: block" %> 
+    <% end %>
+
+    <a href="http://localhost:3000/cats/<%= cat.id %>"><%= cat.name %></a> 
+
+    <% unless last_cat_id == cat.id %>
+        <br><br>    
+    <% end %>
+</li>
