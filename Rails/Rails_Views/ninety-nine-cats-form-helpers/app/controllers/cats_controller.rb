@@ -17,7 +17,6 @@ class CatsController < ApplicationController
 
     def new 
         @cat = Cat.new
-        @cat_colors = Cat.get_cat_colors
         render :new 
     end 
 
@@ -27,18 +26,17 @@ class CatsController < ApplicationController
         if @cat.save
             redirect_to cat_url(@cat)
         else 
-            redirect_to new_cat_url
+            render :new 
         end 
     end 
 
     def edit 
         @cat = Cat.find_by(id: params[:id])
-        @cat_colors = Cat.get_cat_colors
 
         if @cat 
             render :edit 
         else   
-            redirect_to cats_url
+            render :new 
         end 
     end 
 
