@@ -27,16 +27,10 @@ class Cat < ApplicationRecord
         CAT_COLORS
     end
 
-    def self.get_cat_ids 
-        cat_ids = []
-        Cat.all.each { |cat| cat_ids << cat.id }
-        cat_ids 
-    end 
-
-    def self.get_cat_names 
-        cat_names = []
-        Cat.all.each { |cat| cat_names << cat.name }
-        cat_names 
+    def self.get_cat_ids_and_names 
+        arr_of_ids_and_names = []
+        Cat.all.each { |cat| arr_of_ids_and_names << ["#{cat.id} - #{cat.name}", cat.id] }  
+        arr_of_ids_and_names
     end 
 
     def age 

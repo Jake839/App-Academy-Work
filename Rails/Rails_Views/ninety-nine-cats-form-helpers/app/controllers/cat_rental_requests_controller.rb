@@ -1,4 +1,7 @@
 class CatRentalRequestsController < ApplicationController
+    def index 
+        redirect_to new_cat_rental_request_url
+    end 
 
     def new 
         @cat_rental_request = CatRentalRequest.new 
@@ -12,7 +15,7 @@ class CatRentalRequestsController < ApplicationController
         if @cat_rental_request.save 
             redirect_to cat_url(@cat_rental_request.cat_id)
         else   
-            redirect_to new_cat_cat_rental_request
+            render :new
         end 
     end 
 

@@ -57,8 +57,14 @@ class CatRentalRequest < ApplicationRecord
         overlapping_requests.where(status: 'PENDING')
     end 
 
+    def any_empty_parameters?
+        [self.cat_id, self.start_date, self.end_date].any? { |field| field.nil? }
+    end 
+
     def does_not_overlap_approved_request
-        if at_least_one_rental_request_exists?
+        if any_empty_parameters? 
+            errors.add(:base, "Please fill out all fields. Select a cat, a start date, and an end date.")
+        elsif at_least_one_rental_request_exists?
             if overlapping_approved_requests.exists? && self.status == 'APPROVED'
                 errors.add(:base, "There's an approved cat rental request in that time period.")
             end 

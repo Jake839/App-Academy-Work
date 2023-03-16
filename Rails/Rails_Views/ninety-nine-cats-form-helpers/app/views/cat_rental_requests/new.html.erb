@@ -4,9 +4,9 @@
     <div>
         <%= f.label :cat_id %>
         <% if @cat_id %>
-            <%= f.select :cat_id, Cat.get_cat_ids, { selected: @cat_id }, :onchange => "location.href = '/cats/#{}/cat_rental_requests/new'" %> <%= Cat.find(@cat_id).name %> 
+            <%= f.select :cat_id, Cat.get_cat_ids_and_names, { selected: @cat_id } %> 
         <% else %>                                                                          
-            <%= f.select :cat_id, Cat.get_cat_ids, { prompt: "Select Cat" } %>
+            <%= f.select :cat_id, Cat.get_cat_ids_and_names, { prompt: "Select Cat" } %>
         <% end %>    
     </div>
     <div>

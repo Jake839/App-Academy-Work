@@ -5,7 +5,7 @@ Rails.application.routes.draw do
 
   #routes for cats controller. collection/nested routes to cat_rental_requests controller.
   resources :cats do 
-    resources :cat_rental_requests, only: [:new, :create]
+    resources :cat_rental_requests, only: [:index, :new, :create]
   end 
 
   #member routes for cat_rental_requests controller
