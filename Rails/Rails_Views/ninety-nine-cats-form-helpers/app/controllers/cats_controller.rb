@@ -17,7 +17,6 @@ class CatsController < ApplicationController
 
     def new 
         @cat = Cat.new
-        @cat_colors = Cat.get_cat_colors
         render :new 
     end 
 
@@ -57,4 +56,3 @@ class CatsController < ApplicationController
         params.require(:cat).permit(:name, :color, :birth_date, :sex, :description, :image)
     end 
 end 
-

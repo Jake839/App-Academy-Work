@@ -16,15 +16,15 @@ cat3 = Cat.create(birth_date: '2023/02/19', color: 'mix', name: 'Speedy', sex: '
 cat4 = Cat.create(birth_date: '2017/10/12', color: 'orange', name: 'Jumper', sex: 'F', description: 'Jumper cat description.')
 cat5 = Cat.create(birth_date: '2018/02/22', color: 'mix', name: 'Paws', sex: 'F', description: 'Paws cat description.')
 #Load Cat Photos
-missy = File.open('app/assets/images/Missy.jpg', 'rb')
+missy = File.open('app/assets/images/missy.jpg', 'rb')
 cat1.image.attach(io: missy, filename: 'missy.jpg')
-whiskers = File.open('app/assets/images/Whiskers.jpg', 'rb')
+whiskers = File.open('app/assets/images/whiskers.jpg', 'rb')
 cat2.image.attach(io: whiskers, filename: 'whiskers.jpg')
-speedy = File.open('app/assets/images/Speedy.jpg', 'rb')
+speedy = File.open('app/assets/images/speedy.jpg', 'rb')
 cat3.image.attach(io: speedy, filename: 'speedy.jpg')
-jumper = File.open('app/assets/images/Jumper.jpg', 'rb')
+jumper = File.open('app/assets/images/jumper.jpg', 'rb')
 cat4.image.attach(io: jumper, filename: 'jumper.jpg')
-paws = File.open('app/assets/images/Paws.jpg', 'rb')
+paws = File.open('app/assets/images/paws.jpg', 'rb')
 cat5.image.attach(io: paws, filename: 'paws.jpg')
 
 puts "Loading Cat Rental Requests..."
