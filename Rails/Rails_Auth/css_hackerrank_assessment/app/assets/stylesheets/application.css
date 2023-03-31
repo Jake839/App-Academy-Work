@@ -1,0 +1,61 @@
+/*
+ * This is a manifest file that'll be compiled into application.css, which will include all the files
+ * listed below.
+ *
+ * Any CSS (and SCSS, if configured) file within this directory, lib/assets/stylesheets, or any plugin's
+ * vendor/assets/stylesheets directory can be referenced here using a relative path.
+ *
+ * You're free to add application-wide styles to this file and they'll appear at the bottom of the
+ * compiled file so the styles you add here take precedence over styles defined in any other CSS
+ * files in this directory. Styles in this file should be added after the last require_* statement.
+ * It is generally better to create a new file per style scope.
+ *
+ *= require_tree .
+ *= require_self
+ */
+
+/*
+INSTRUCTIONS:
+An html skeleton is provided. Apply the following styles:
+1. Add one line of code to the below styling for the "flex-list" class. 
+The added line of code should horizontally align all the children of the flex-list class into the center of the page.
+
+2. Add the display property for flex to the element with the class of "title-header". 
+Then use the "justify-content" property to horizontally center all elements nested within the "title-header" into the center of the page.
+
+3. Add a margin of 20 pixels all around to all "li" element nested within the "animals" class.
+
+4. Add the display property for flex to the element with the id of "animal-list". Then use the "justify-content" property to show both the "h4" tag on the far left of the page AND the elements shown within the "animals" class to the right of the page.
+(See the photo from the directions for a visual).
+You may not edit the html skeleton.
+
+The following CSS styles are provided for you.
+*/
+
+ .red { 
+    color: red;
+ }
+
+ .blue { 
+    color: blue; 
+ }
+
+ .flex-list { 
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+ }
+
+ .title-header { 
+    display: flex;
+    justify-content: center;
+ }
+
+ .animals > li { 
+    margin: 20px;
+ }
+
+ #animal-list { 
+    display: flex;
+    justify-content: space-between;
+ }

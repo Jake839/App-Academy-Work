@@ -1,0 +1,429 @@
+Started GET "/" for ::1 at 2023-03-31 08:44:27 -0700
+
+ActiveRecord::NoDatabaseError - We could not find your database: css_hackerrank_assessment_development. Which can be found in the database configuration file located at config/database.yml.
+To resolve this issue:
+- Did you create the database for this app, or delete it? You may need to create your database.
+- Has the database name changed? Check your database.yml config has the correct database name.
+To create your database, run:
+        bin/rails db:create:
+
+Started POST "/__better_errors/4f0586572a0a9c61/variables" for ::1 at 2023-03-31 08:44:28 -0700
+  [1m[35m (749.8ms)[0m  [1m[35mCREATE DATABASE "css_hackerrank_assessment_development" ENCODING = 'unicode'[0m
+  [1m[35m (432.1ms)[0m  [1m[35mCREATE DATABASE "css_hackerrank_assessment_test" ENCODING = 'unicode'[0m
+Started GET "/" for ::1 at 2023-03-31 08:45:05 -0700
+Processing by AnimalsController#index as HTML
+Completed 500 Internal Server Error in 14ms (ActiveRecord: 0.0ms | Allocations: 3401)
+
+
+
+ActionView::MissingTemplate - Missing template animals/index, application/index with {:locale=>[:en], :formats=>[:html], :variants=>[], :handlers=>[:raw, :erb, :html, :builder, :ruby]}.
+Searched in:
+  * "/Users/jacobshapiro/Desktop/Jake/Development/App-Academy-Work/Rails/Rails_Auth/css_hackerrank_assessment/app/views":
+  app/controllers/animals_controller.rb:3:in `index'
+
+Started POST "/__better_errors/00290705a91eb996/variables" for ::1 at 2023-03-31 08:45:06 -0700
+Started GET "/" for ::1 at 2023-03-31 08:46:22 -0700
+Processing by AnimalsController#index as HTML
+Completed 500 Internal Server Error in 12ms (ActiveRecord: 0.0ms | Allocations: 3401)
+
+
+
+ActionView::MissingTemplate - Missing template animals/index, application/index with {:locale=>[:en], :formats=>[:html], :variants=>[], :handlers=>[:raw, :erb, :html, :builder, :ruby]}.
+Searched in:
+  * "/Users/jacobshapiro/Desktop/Jake/Development/App-Academy-Work/Rails/Rails_Auth/css_hackerrank_assessment/app/views":
+  app/controllers/animals_controller.rb:3:in `index'
+
+Started POST "/__better_errors/73fe1b02080c50bc/variables" for ::1 at 2023-03-31 08:46:23 -0700
+Started GET "/" for ::1 at 2023-03-31 08:46:46 -0700
+Processing by AnimalsController#index as HTML
+Completed 500 Internal Server Error in 2ms (ActiveRecord: 0.0ms | Allocations: 1079)
+
+
+
+ActionView::MissingTemplate - Missing template animals/index, application/index with {:locale=>[:en], :formats=>[:html], :variants=>[], :handlers=>[:raw, :erb, :html, :builder, :ruby]}.
+Searched in:
+  * "/Users/jacobshapiro/Desktop/Jake/Development/App-Academy-Work/Rails/Rails_Auth/css_hackerrank_assessment/app/views":
+  app/controllers/animals_controller.rb:3:in `index'
+
+Started POST "/__better_errors/e02b6b74569cdd4e/variables" for ::1 at 2023-03-31 08:46:47 -0700
+Started GET "/" for ::1 at 2023-03-31 08:48:13 -0700
+Processing by AnimalsController#index as HTML
+Completed 500 Internal Server Error in 3ms (ActiveRecord: 0.0ms | Allocations: 982)
+
+
+
+ActionView::MissingTemplate - Missing template animals/index, application/index with {:locale=>[:en], :formats=>[:html], :variants=>[], :handlers=>[:raw, :erb, :html, :builder, :ruby]}.
+Searched in:
+  * "/Users/jacobshapiro/Desktop/Jake/Development/App-Academy-Work/Rails/Rails_Auth/css_hackerrank_assessment/app/views":
+  app/controllers/animals_controller.rb:3:in `index'
+
+Started POST "/__better_errors/f32d16cd992b0b83/variables" for ::1 at 2023-03-31 08:48:14 -0700
+Started GET "/" for ::1 at 2023-03-31 08:48:54 -0700
+Processing by AnimalsController#index as HTML
+Completed 500 Internal Server Error in 11ms (ActiveRecord: 0.0ms | Allocations: 3401)
+
+
+
+ActionView::MissingTemplate - Missing template animals/index, application/index with {:locale=>[:en], :formats=>[:html], :variants=>[], :handlers=>[:raw, :erb, :html, :builder, :ruby]}.
+Searched in:
+  * "/Users/jacobshapiro/Desktop/Jake/Development/App-Academy-Work/Rails/Rails_Auth/css_hackerrank_assessment/app/views":
+  app/controllers/animals_controller.rb:3:in `index'
+
+Started POST "/__better_errors/494bd5d4e1dc9f65/variables" for ::1 at 2023-03-31 08:48:55 -0700
+Started GET "/" for ::1 at 2023-03-31 08:52:03 -0700
+Processing by AnimalsController#index as HTML
+Completed 500 Internal Server Error in 5ms (ActiveRecord: 0.0ms | Allocations: 983)
+
+
+
+ActionView::MissingTemplate - Missing template animals/index, application/index with {:locale=>[:en], :formats=>[:html], :variants=>[], :handlers=>[:raw, :erb, :html, :builder, :ruby]}.
+Searched in:
+  * "/Users/jacobshapiro/Desktop/Jake/Development/App-Academy-Work/Rails/Rails_Auth/css_hackerrank_assessment/app/views":
+  app/controllers/animals_controller.rb:3:in `index'
+
+Started POST "/__better_errors/47e8059e0979df41/variables" for ::1 at 2023-03-31 08:52:04 -0700
+Started GET "/" for ::1 at 2023-03-31 08:53:36 -0700
+Processing by AnimalsController#index as HTML
+Completed 500 Internal Server Error in 2ms (ActiveRecord: 0.0ms | Allocations: 1081)
+
+
+
+ActionView::MissingTemplate - Missing template animals/index, application/index with {:locale=>[:en], :formats=>[:html], :variants=>[], :handlers=>[:raw, :erb, :html, :builder, :ruby]}.
+Searched in:
+  * "/Users/jacobshapiro/Desktop/Jake/Development/App-Academy-Work/Rails/Rails_Auth/css_hackerrank_assessment/app/views":
+  app/controllers/animals_controller.rb:3:in `index'
+
+Started POST "/__better_errors/28d9eb923db2ddc0/variables" for ::1 at 2023-03-31 08:53:36 -0700
+Started GET "/" for ::1 at 2023-03-31 08:54:06 -0700
+Processing by AnimalsController#index as HTML
+Completed 500 Internal Server Error in 2ms (ActiveRecord: 0.0ms | Allocations: 1080)
+
+
+
+ActionView::MissingTemplate - Missing template animals/index, application/index with {:locale=>[:en], :formats=>[:html], :variants=>[], :handlers=>[:raw, :erb, :html, :builder, :ruby]}.
+Searched in:
+  * "/Users/jacobshapiro/Desktop/Jake/Development/App-Academy-Work/Rails/Rails_Auth/css_hackerrank_assessment/app/views":
+  app/controllers/animals_controller.rb:3:in `index'
+
+Started POST "/__better_errors/c9cc60d72c429563/variables" for ::1 at 2023-03-31 08:54:06 -0700
+Started GET "/" for ::1 at 2023-03-31 08:55:14 -0700
+Processing by AnimalsController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering animals/index.html.erb within layouts/application
+  Rendered animals/index.html.erb within layouts/application (Duration: 10.7ms | Allocations: 400)
+  Rendered layout layouts/application.html.erb (Duration: 150.5ms | Allocations: 6948)
+Completed 200 OK in 167ms (Views: 166.4ms | ActiveRecord: 0.0ms | Allocations: 8261)
+
+
+Started GET "/" for ::1 at 2023-03-31 09:02:45 -0700
+Processing by AnimalsController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering animals/index.html.erb within layouts/application
+  Rendered animals/index.html.erb within layouts/application (Duration: 17.0ms | Allocations: 120)
+  Rendered layout layouts/application.html.erb (Duration: 47.2ms | Allocations: 1526)
+Completed 200 OK in 125ms (Views: 123.2ms | Allocations: 2144)
+
+
+Started GET "/index.css" for ::1 at 2023-03-31 09:02:45 -0700
+  
+ActionController::RoutingError (No route matches [GET] "/index.css"):
+  
+Started GET "/" for ::1 at 2023-03-31 09:05:00 -0700
+Processing by AnimalsController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering animals/index.html.erb within layouts/application
+  Rendered animals/index.html.erb within layouts/application (Duration: 0.6ms | Allocations: 129)
+  Rendered layout layouts/application.html.erb (Duration: 5.0ms | Allocations: 1533)
+Completed 200 OK in 8ms (Views: 7.3ms | Allocations: 2155)
+
+
+Started GET "/index.css" for ::1 at 2023-03-31 09:05:00 -0700
+  
+ActionController::RoutingError (No route matches [GET] "/index.css"):
+  
+Started GET "/" for ::1 at 2023-03-31 09:07:29 -0700
+Processing by AnimalsController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering animals/index.html.erb within layouts/application
+  Rendered animals/index.html.erb within layouts/application (Duration: 0.7ms | Allocations: 136)
+  Rendered layout layouts/application.html.erb (Duration: 5.2ms | Allocations: 1520)
+Completed 200 OK in 9ms (Views: 8.3ms | Allocations: 2138)
+
+
+Started GET "/index.css" for ::1 at 2023-03-31 09:07:30 -0700
+  
+ActionController::RoutingError (No route matches [GET] "/index.css"):
+  
+Started GET "/" for ::1 at 2023-03-31 09:09:24 -0700
+Processing by AnimalsController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering animals/index.html.erb within layouts/application
+  Rendered animals/index.html.erb within layouts/application (Duration: 0.1ms | Allocations: 7)
+  Rendered layout layouts/application.html.erb (Duration: 58.5ms | Allocations: 2520)
+Completed 200 OK in 60ms (Views: 59.5ms | Allocations: 2724)
+
+
+Started GET "/index.css" for ::1 at 2023-03-31 09:09:25 -0700
+  
+ActionController::RoutingError (No route matches [GET] "/index.css"):
+  
+Started GET "/" for ::1 at 2023-03-31 09:10:47 -0700
+Processing by AnimalsController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering animals/index.html.erb within layouts/application
+  Rendered animals/index.html.erb within layouts/application (Duration: 0.2ms | Allocations: 7)
+  Rendered layout layouts/application.html.erb (Duration: 26.1ms | Allocations: 2499)
+Completed 200 OK in 27ms (Views: 27.0ms | Allocations: 2701)
+
+
+Started GET "/index.css" for ::1 at 2023-03-31 09:10:48 -0700
+  
+ActionController::RoutingError (No route matches [GET] "/index.css"):
+  
+Started GET "/" for ::1 at 2023-03-31 09:22:57 -0700
+Processing by AnimalsController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering animals/index.html.erb within layouts/application
+  Rendered animals/index.html.erb within layouts/application (Duration: 0.4ms | Allocations: 7)
+  Rendered layout layouts/application.html.erb (Duration: 48.5ms | Allocations: 2530)
+Completed 200 OK in 54ms (Views: 51.9ms | Allocations: 2733)
+
+
+Started GET "/index.css" for ::1 at 2023-03-31 09:22:57 -0700
+  
+ActionController::RoutingError (No route matches [GET] "/index.css"):
+  
+Started GET "/" for ::1 at 2023-03-31 09:23:26 -0700
+Processing by AnimalsController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering animals/index.html.erb within layouts/application
+  Rendered animals/index.html.erb within layouts/application (Duration: 0.0ms | Allocations: 7)
+  Rendered layout layouts/application.html.erb (Duration: 23.2ms | Allocations: 2540)
+Completed 200 OK in 24ms (Views: 23.8ms | Allocations: 2742)
+
+
+Started GET "/index.css" for ::1 at 2023-03-31 09:23:26 -0700
+  
+ActionController::RoutingError (No route matches [GET] "/index.css"):
+  
+Started GET "/" for ::1 at 2023-03-31 09:26:32 -0700
+Processing by AnimalsController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering animals/index.html.erb within layouts/application
+  Rendered animals/index.html.erb within layouts/application (Duration: 0.5ms | Allocations: 7)
+  Rendered layout layouts/application.html.erb (Duration: 41.0ms | Allocations: 2560)
+Completed 200 OK in 47ms (Views: 44.9ms | Allocations: 2764)
+
+
+Started GET "/index.css" for ::1 at 2023-03-31 09:26:32 -0700
+  
+ActionController::RoutingError (No route matches [GET] "/index.css"):
+  
+Started GET "/" for ::1 at 2023-03-31 09:26:34 -0700
+Processing by AnimalsController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering animals/index.html.erb within layouts/application
+  Rendered animals/index.html.erb within layouts/application (Duration: 0.1ms | Allocations: 7)
+  Rendered layout layouts/application.html.erb (Duration: 3.2ms | Allocations: 1144)
+Completed 200 OK in 4ms (Views: 3.9ms | Allocations: 1346)
+
+
+Started GET "/index.css" for ::1 at 2023-03-31 09:26:34 -0700
+  
+ActionController::RoutingError (No route matches [GET] "/index.css"):
+  
+Started GET "/" for ::1 at 2023-03-31 09:27:13 -0700
+Processing by AnimalsController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering animals/index.html.erb within layouts/application
+  Rendered animals/index.html.erb within layouts/application (Duration: 0.1ms | Allocations: 7)
+  Rendered layout layouts/application.html.erb (Duration: 34.3ms | Allocations: 2547)
+Completed 200 OK in 35ms (Views: 35.0ms | Allocations: 2749)
+
+
+Started GET "/index.css" for ::1 at 2023-03-31 09:27:13 -0700
+  
+ActionController::RoutingError (No route matches [GET] "/index.css"):
+  
+Started GET "/" for ::1 at 2023-03-31 09:35:06 -0700
+Processing by AnimalsController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering animals/index.html.erb within layouts/application
+  Rendered animals/index.html.erb within layouts/application (Duration: 0.5ms | Allocations: 7)
+  Rendered layout layouts/application.html.erb (Duration: 54.9ms | Allocations: 2537)
+Completed 200 OK in 60ms (Views: 58.4ms | Allocations: 2740)
+
+
+Started GET "/index.css" for ::1 at 2023-03-31 09:35:06 -0700
+  
+ActionController::RoutingError (No route matches [GET] "/index.css"):
+  
+Started GET "/" for ::1 at 2023-03-31 09:35:09 -0700
+Processing by AnimalsController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering animals/index.html.erb within layouts/application
+  Rendered animals/index.html.erb within layouts/application (Duration: 0.0ms | Allocations: 7)
+  Rendered layout layouts/application.html.erb (Duration: 9.9ms | Allocations: 1165)
+Completed 200 OK in 11ms (Views: 10.5ms | Allocations: 1367)
+
+
+Started GET "/index.css" for ::1 at 2023-03-31 09:35:09 -0700
+  
+ActionController::RoutingError (No route matches [GET] "/index.css"):
+  
+Started GET "/" for ::1 at 2023-03-31 09:35:14 -0700
+Processing by AnimalsController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering animals/index.html.erb within layouts/application
+  Rendered animals/index.html.erb within layouts/application (Duration: 0.1ms | Allocations: 7)
+  Rendered layout layouts/application.html.erb (Duration: 29.9ms | Allocations: 1217)
+Completed 200 OK in 32ms (Views: 31.4ms | Allocations: 1421)
+
+
+Started GET "/index.css" for ::1 at 2023-03-31 09:35:14 -0700
+  
+ActionController::RoutingError (No route matches [GET] "/index.css"):
+  
+Started GET "/" for ::1 at 2023-03-31 09:35:21 -0700
+Processing by AnimalsController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering animals/index.html.erb within layouts/application
+  Rendered animals/index.html.erb within layouts/application (Duration: 0.1ms | Allocations: 7)
+  Rendered layout layouts/application.html.erb (Duration: 64.7ms | Allocations: 2546)
+Completed 200 OK in 66ms (Views: 65.6ms | Allocations: 2748)
+
+
+Started GET "/index.css" for ::1 at 2023-03-31 09:35:21 -0700
+  
+ActionController::RoutingError (No route matches [GET] "/index.css"):
+  
+Started GET "/" for ::1 at 2023-03-31 09:35:33 -0700
+Processing by AnimalsController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering animals/index.html.erb within layouts/application
+  Rendered animals/index.html.erb within layouts/application (Duration: 0.1ms | Allocations: 7)
+  Rendered layout layouts/application.html.erb (Duration: 29.3ms | Allocations: 2547)
+Completed 200 OK in 30ms (Views: 30.0ms | Allocations: 2749)
+
+
+Started GET "/index.css" for ::1 at 2023-03-31 09:35:33 -0700
+  
+ActionController::RoutingError (No route matches [GET] "/index.css"):
+  
+Started GET "/" for ::1 at 2023-03-31 09:35:34 -0700
+Processing by AnimalsController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering animals/index.html.erb within layouts/application
+  Rendered animals/index.html.erb within layouts/application (Duration: 0.1ms | Allocations: 7)
+  Rendered layout layouts/application.html.erb (Duration: 4.0ms | Allocations: 1159)
+Completed 200 OK in 5ms (Views: 4.7ms | Allocations: 1361)
+
+
+Started GET "/index.css" for ::1 at 2023-03-31 09:35:34 -0700
+  
+ActionController::RoutingError (No route matches [GET] "/index.css"):
+  
+Started GET "/" for ::1 at 2023-03-31 09:35:39 -0700
+Processing by AnimalsController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering animals/index.html.erb within layouts/application
+  Rendered animals/index.html.erb within layouts/application (Duration: 0.1ms | Allocations: 7)
+  Rendered layout layouts/application.html.erb (Duration: 19.3ms | Allocations: 2548)
+Completed 200 OK in 21ms (Views: 20.6ms | Allocations: 2751)
+
+
+Started GET "/index.css" for ::1 at 2023-03-31 09:35:39 -0700
+  
+ActionController::RoutingError (No route matches [GET] "/index.css"):
+  
+Started GET "/" for ::1 at 2023-03-31 09:35:46 -0700
+Processing by AnimalsController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering animals/index.html.erb within layouts/application
+  Rendered animals/index.html.erb within layouts/application (Duration: 0.1ms | Allocations: 7)
+  Rendered layout layouts/application.html.erb (Duration: 26.5ms | Allocations: 2539)
+Completed 200 OK in 28ms (Views: 27.2ms | Allocations: 2741)
+
+
+Started GET "/index.css" for ::1 at 2023-03-31 09:35:46 -0700
+  
+ActionController::RoutingError (No route matches [GET] "/index.css"):
+  
+Started GET "/" for ::1 at 2023-03-31 09:35:48 -0700
+Processing by AnimalsController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering animals/index.html.erb within layouts/application
+  Rendered animals/index.html.erb within layouts/application (Duration: 0.0ms | Allocations: 7)
+  Rendered layout layouts/application.html.erb (Duration: 5.1ms | Allocations: 1155)
+Completed 200 OK in 6ms (Views: 5.7ms | Allocations: 1357)
+
+
+Started GET "/index.css" for ::1 at 2023-03-31 09:35:48 -0700
+  
+ActionController::RoutingError (No route matches [GET] "/index.css"):
+  
+Started GET "/" for ::1 at 2023-03-31 09:36:08 -0700
+Processing by AnimalsController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering animals/index.html.erb within layouts/application
+  Rendered animals/index.html.erb within layouts/application (Duration: 0.1ms | Allocations: 7)
+  Rendered layout layouts/application.html.erb (Duration: 66.3ms | Allocations: 2538)
+Completed 200 OK in 68ms (Views: 67.3ms | Allocations: 2740)
+
+
+Started GET "/index.css" for ::1 at 2023-03-31 09:36:08 -0700
+  
+ActionController::RoutingError (No route matches [GET] "/index.css"):
+  
+Started GET "/" for ::1 at 2023-03-31 09:36:14 -0700
+Processing by AnimalsController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering animals/index.html.erb within layouts/application
+  Rendered animals/index.html.erb within layouts/application (Duration: 0.1ms | Allocations: 7)
+  Rendered layout layouts/application.html.erb (Duration: 26.2ms | Allocations: 2542)
+Completed 200 OK in 27ms (Views: 27.1ms | Allocations: 2744)
+
+
+Started GET "/index.css" for ::1 at 2023-03-31 09:36:14 -0700
+  
+ActionController::RoutingError (No route matches [GET] "/index.css"):
+  
+Started GET "/" for ::1 at 2023-03-31 09:36:21 -0700
+Processing by AnimalsController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering animals/index.html.erb within layouts/application
+  Rendered animals/index.html.erb within layouts/application (Duration: 0.1ms | Allocations: 7)
+  Rendered layout layouts/application.html.erb (Duration: 41.0ms | Allocations: 2542)
+Completed 200 OK in 42ms (Views: 41.8ms | Allocations: 2744)
+
+
+Started GET "/index.css" for ::1 at 2023-03-31 09:36:21 -0700
+  
+ActionController::RoutingError (No route matches [GET] "/index.css"):
+  
+Started GET "/" for ::1 at 2023-03-31 09:39:31 -0700
+Processing by AnimalsController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering animals/index.html.erb within layouts/application
+  Rendered animals/index.html.erb within layouts/application (Duration: 1.6ms | Allocations: 7)
+  Rendered layout layouts/application.html.erb (Duration: 86.0ms | Allocations: 2530)
+Completed 200 OK in 92ms (Views: 90.2ms | Allocations: 2732)
+
+
+Started GET "/index.css" for ::1 at 2023-03-31 09:39:32 -0700
+  
+ActionController::RoutingError (No route matches [GET] "/index.css"):
+  
+Started GET "/" for ::1 at 2023-03-31 09:41:09 -0700
+Processing by AnimalsController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering animals/index.html.erb within layouts/application
+  Rendered animals/index.html.erb within layouts/application (Duration: 0.1ms | Allocations: 7)
+  Rendered layout layouts/application.html.erb (Duration: 95.8ms | Allocations: 2577)
+Completed 200 OK in 97ms (Views: 96.5ms | Allocations: 2780)
+
+
+Started GET "/index.css" for ::1 at 2023-03-31 09:41:09 -0700
+  
+ActionController::RoutingError (No route matches [GET] "/index.css"):
+  
